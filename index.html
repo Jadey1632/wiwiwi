@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boopbaap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Curtain Panel -->
+    <div id="leftCurtain" style="position: fixed; top: 0; left: 0; width: 50%; height: 100%; background: linear-gradient(135deg, #ffdab9, #ffb6c1); z-index: 9999; cursor: pointer; transition: all 1.2s ease-in-out; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: #8b4513; font-family: 'Arial', sans-serif; transform: translateX(-25%);">
+            <h1 style="font-size: 2.5em; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(139,69,19,0.2); font-weight: 300;">My</h1>
+            <div style="font-size: 3em; margin-bottom: 20px; filter: drop-shadow(2px 2px 4px rgba(139,69,19,0.2));">💕</div>
+        </div>
+    </div>
+
+    <!-- Right Curtain Panel -->
+    <div id="rightCurtain" style="position: fixed; top: 0; right: 0; width: 50%; height: 100%; background: linear-gradient(135deg, #ffb6c1, #ffc0cb); z-index: 9999; cursor: pointer; transition: all 1.2s ease-in-out; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: #8b4513; font-family: 'Arial', sans-serif; transform: translateX(25%);">
+            <h1 style="font-size: 2.5em; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(139,69,19,0.2); font-weight: 300;">Love</h1>
+            <div style="font-size: 3em; margin-bottom: 20px; filter: drop-shadow(2px 2px 4px rgba(139,69,19,0.2));">✨</div>
+        </div>
+    </div>
+
+    <!-- Center Text Overlay -->
+    <div id="centerText" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10000; text-align: center; color: #8b4513; font-family: 'Arial', sans-serif; pointer-events: none; transition: all 0.8s ease-in-out;">
+        <p style="font-size: 1.2em; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(139,69,19,0.2); font-weight: 300;">CLICK ME!!!!!! (or anywhere)</p>
+        <div style="font-size: 1.8em; animation: gentleBounce 3s infinite ease-in-out;">😉🤞</div>
+    </div>
+
+    <!-- Lilly Field for floating lilies in the background -->
+    <div id="lillyField"></div>
+    <div class="minibook-container">
+        <h1>For My Love</h1>
+        <div class="minibook">
+            <div class="page left">
+                <span class="title-heart">BEEPBOOP <span style='color:#e07a5f'>&hearts;</span></span>
+            </div>
+            <div class="page right">
+            </div>
+        </div>
+        <button id="prevPage">&#8592; Prev</button>
+        <button id="nextPage">Next &#8594;</button>
+        <!-- Floating Lilly Animation (now inside minibook-container) -->
+        <div id="floatingLilly" style="display:none; position: absolute; top: 20%; right: 5%; z-index: 10; font-size: 2.5em; filter: drop-shadow(2px 2px 4px rgba(139,69,19,0.3));">🌸</div>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="Lilly.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+        <button id="musicToggle" style="background: #e07a5f; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; font-size: 14px;">
+            🎵 CLICK ME!!
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
